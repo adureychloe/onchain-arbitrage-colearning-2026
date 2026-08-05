@@ -1,0 +1,29 @@
+name: Markdown checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  links-and-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check Markdown links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+
+      - name: Scan Markdown for credential patterns
+        shell: bash
+        run: |
+          set -euo pipefail
+          if rg -n -i 'PRIVATE_KEY|MNEMONIC|API_KEY|BEGIN .* PRIVATE KEY' --glob '*.md' --glob '!docs/superpowers/**' .; then
+            echo 'Credential-like pattern found in Markdown.' >&2
+            exit 1
+          fi
