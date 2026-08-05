@@ -1,2 +1,51 @@
 # Superpowers isolated worktrees
 .worktrees/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+*credentials*
+*credential*
+*secret*
+*token*
+*api-key*
+*apikey*
+*private-key*
+*privatekey*
+*mnemonic*
+*seed*
+*wallet*
+*keystore*
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs and local runtime output
+*.log
+logs/
+tmp/
+.cache/
+
+# Local experiment output and raw data
+experiments/raw/
+experiments/data/
+data/raw/
+*.sqlite
+*.sqlite3
+*.db
