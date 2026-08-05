@@ -6,23 +6,26 @@
 .env.*
 !.env.example
 *.pem
-*.key
 *.p12
 *.pfx
 *.keystore
 *.jks
-*credentials*
-*credential*
-*secret*
-*token*
-*api-key*
-*apikey*
-*private-key*
-*privatekey*
-*mnemonic*
-*seed*
-*wallet*
-*keystore*
+/credentials/
+/secrets/
+/wallet-exports/
+**/credentials.json
+**/credentials.yaml
+**/credentials.yml
+**/secrets.json
+**/secrets.yaml
+**/secrets.yml
+**/api-key.txt
+**/api-key.json
+**/private-key.txt
+**/private-key.json
+**/mnemonic.txt
+**/seed.txt
+**/wallet-export.json
 
 # Operating-system files
 .DS_Store
@@ -44,7 +47,6 @@ tmp/
 
 # Local experiment output and raw data
 experiments/raw/
-experiments/data/
 data/raw/
 *.sqlite
 *.sqlite3
