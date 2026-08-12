@@ -1,0 +1,298 @@
+{
+  "queried_at_utc": "2026-08-12T14:22:18.430381+00:00",
+  "endpoint": "https://li.quest/v1/advanced/routes",
+  "request": {
+    "fromChainId": 42161,
+    "toChainId": 42161,
+    "fromTokenAddress": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+    "toTokenAddress": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+    "fromAmount": "1000000000",
+    "fromAddress": "0x1111111111111111111111111111111111111111",
+    "toAddress": "0x1111111111111111111111111111111111111111",
+    "options": {
+      "slippage": 0.005,
+      "order": "CHEAPEST",
+      "maxPriceImpact": 0.1
+    }
+  },
+  "from_symbol": "USDC",
+  "to_symbol": "WETH",
+  "from_amount_display": "1000",
+  "routes": [
+    {
+      "rank": 1,
+      "route_id": "e3f57388-c94d-4a90-81f0-34018571b578",
+      "tags": [
+        "RECOMMENDED",
+        "CHEAPEST",
+        "FASTEST"
+      ],
+      "tools": [
+        "nordstern"
+      ],
+      "to_symbol": "WETH",
+      "to_amount": "0.526664294657065562",
+      "to_amount_min": "0.524030973183780234",
+      "to_amount_min_usd": "993.2693",
+      "gas_cost_usd": "0.0081",
+      "effective_min_after_gas_usd": "993.2612",
+      "fee_cost_usd": "2.4981",
+      "fee_details": [
+        "LIFI Fixed Fee $2.4981"
+      ],
+      "duration_seconds": 0.0,
+      "top_level_steps": 1,
+      "executable_steps": 2,
+      "all_step_types": [
+        "lifi",
+        "protocol",
+        "swap"
+      ],
+      "simulation": "success",
+      "risk": "low",
+      "risk_reasons": [
+        "route simulation succeeded",
+        "2 executable actions",
+        "endpoint tokens verified"
+      ]
+    },
+    {
+      "rank": 2,
+      "route_id": "07032004-ad5d-40e3-957e-03d403057a5a",
+      "tags": [],
+      "tools": [
+        "kyberswap"
+      ],
+      "to_symbol": "WETH",
+      "to_amount": "0.526645406936324437",
+      "to_amount_min": "0.524012179901642815",
+      "to_amount_min_usd": "993.2336",
+      "gas_cost_usd": "0.0259",
+      "effective_min_after_gas_usd": "993.2077",
+      "fee_cost_usd": "2.4981",
+      "fee_details": [
+        "LIFI Fixed Fee $2.4981"
+      ],
+      "duration_seconds": 0.0,
+      "top_level_steps": 1,
+      "executable_steps": 2,
+      "all_step_types": [
+        "lifi",
+        "protocol",
+        "swap"
+      ],
+      "simulation": "no-calldata",
+      "risk": "medium",
+      "risk_reasons": [
+        "route simulation=no-calldata",
+        "2 executable actions",
+        "endpoint tokens verified"
+      ]
+    },
+    {
+      "rank": 3,
+      "route_id": "9f91417e-5ed8-424d-a8bc-d0d856c8fd36",
+      "tags": [],
+      "tools": [
+        "fly"
+      ],
+      "to_symbol": "WETH",
+      "to_amount": "0.526640179738637572",
+      "to_amount_min": "0.524006978839944384",
+      "to_amount_min_usd": "993.2238",
+      "gas_cost_usd": "0.0177",
+      "effective_min_after_gas_usd": "993.2061",
+      "fee_cost_usd": "2.4981",
+      "fee_details": [
+        "LIFI Fixed Fee $2.4981"
+      ],
+      "duration_seconds": 0.0,
+      "top_level_steps": 1,
+      "executable_steps": 2,
+      "all_step_types": [
+        "lifi",
+        "protocol",
+        "swap"
+      ],
+      "simulation": "no-calldata",
+      "risk": "medium",
+      "risk_reasons": [
+        "route simulation=no-calldata",
+        "2 executable actions",
+        "endpoint tokens verified"
+      ]
+    },
+    {
+      "rank": 4,
+      "route_id": "45ed179d-d1c1-432a-9611-d0e24fbd349c",
+      "tags": [],
+      "tools": [
+        "okx"
+      ],
+      "to_symbol": "WETH",
+      "to_amount": "0.52664102743326697",
+      "to_amount_min": "0.524007822296100635",
+      "to_amount_min_usd": "993.2254",
+      "gas_cost_usd": "0.0220",
+      "effective_min_after_gas_usd": "993.2034",
+      "fee_cost_usd": "2.4981",
+      "fee_details": [
+        "LIFI Fixed Fee $2.4981"
+      ],
+      "duration_seconds": 0.0,
+      "top_level_steps": 1,
+      "executable_steps": 2,
+      "all_step_types": [
+        "lifi",
+        "protocol",
+        "swap"
+      ],
+      "simulation": "success",
+      "risk": "low",
+      "risk_reasons": [
+        "route simulation succeeded",
+        "2 executable actions",
+        "endpoint tokens verified"
+      ]
+    },
+    {
+      "rank": 5,
+      "route_id": "8e752590-e2fe-4958-a5f9-2bf310a8cef1",
+      "tags": [],
+      "tools": [
+        "bitget"
+      ],
+      "to_symbol": "WETH",
+      "to_amount": "0.526651673177646937",
+      "to_amount_min": "0.524018414811758702",
+      "to_amount_min_usd": "993.2455",
+      "gas_cost_usd": "0.0785",
+      "effective_min_after_gas_usd": "993.1670",
+      "fee_cost_usd": "2.4981",
+      "fee_details": [
+        "LIFI Fixed Fee $2.4981"
+      ],
+      "duration_seconds": 0.0,
+      "top_level_steps": 1,
+      "executable_steps": 2,
+      "all_step_types": [
+        "lifi",
+        "protocol",
+        "swap"
+      ],
+      "simulation": "no-calldata",
+      "risk": "medium",
+      "risk_reasons": [
+        "route simulation=no-calldata",
+        "2 executable actions",
+        "endpoint tokens verified"
+      ]
+    },
+    {
+      "rank": 6,
+      "route_id": "a35f28e2-70ec-4f72-93d9-c8b124c049a2",
+      "tags": [],
+      "tools": [
+        "1inch"
+      ],
+      "to_symbol": "WETH",
+      "to_amount": "0.526280670011163061",
+      "to_amount_min": "0.523649266661107246",
+      "to_amount_min_usd": "992.5458",
+      "gas_cost_usd": "0.0379",
+      "effective_min_after_gas_usd": "992.5079",
+      "fee_cost_usd": "2.4981",
+      "fee_details": [
+        "LIFI Fixed Fee $2.4981"
+      ],
+      "duration_seconds": 0.0,
+      "top_level_steps": 1,
+      "executable_steps": 2,
+      "all_step_types": [
+        "lifi",
+        "protocol",
+        "swap"
+      ],
+      "simulation": "no-calldata",
+      "risk": "medium",
+      "risk_reasons": [
+        "route simulation=no-calldata",
+        "2 executable actions",
+        "endpoint tokens verified"
+      ]
+    },
+    {
+      "rank": 7,
+      "route_id": "0f8480af-3c9c-48d9-adb1-85692fdd1e35",
+      "tags": [],
+      "tools": [
+        "sushiswap"
+      ],
+      "to_symbol": "WETH",
+      "to_amount": "0.526107011274651245",
+      "to_amount_min": "0.523476476218277988",
+      "to_amount_min_usd": "992.2183",
+      "gas_cost_usd": "0.0079",
+      "effective_min_after_gas_usd": "992.2104",
+      "fee_cost_usd": "3.4963",
+      "fee_details": [
+        "LIFI Fixed Fee $2.4981",
+        "Sushi Protocol Fee $0.9982"
+      ],
+      "duration_seconds": 0.0,
+      "top_level_steps": 1,
+      "executable_steps": 2,
+      "all_step_types": [
+        "lifi",
+        "protocol",
+        "swap"
+      ],
+      "simulation": "success",
+      "risk": "low",
+      "risk_reasons": [
+        "route simulation succeeded",
+        "2 executable actions",
+        "endpoint tokens verified"
+      ]
+    }
+  ],
+  "recommended": {
+    "rank": 1,
+    "route_id": "e3f57388-c94d-4a90-81f0-34018571b578",
+    "tags": [
+      "RECOMMENDED",
+      "CHEAPEST",
+      "FASTEST"
+    ],
+    "tools": [
+      "nordstern"
+    ],
+    "to_symbol": "WETH",
+    "to_amount": "0.526664294657065562",
+    "to_amount_min": "0.524030973183780234",
+    "to_amount_min_usd": "993.2693",
+    "gas_cost_usd": "0.0081",
+    "effective_min_after_gas_usd": "993.2612",
+    "fee_cost_usd": "2.4981",
+    "fee_details": [
+      "LIFI Fixed Fee $2.4981"
+    ],
+    "duration_seconds": 0.0,
+    "top_level_steps": 1,
+    "executable_steps": 2,
+    "all_step_types": [
+      "lifi",
+      "protocol",
+      "swap"
+    ],
+    "simulation": "success",
+    "risk": "low",
+    "risk_reasons": [
+      "route simulation succeeded",
+      "2 executable actions",
+      "endpoint tokens verified"
+    ]
+  },
+  "unavailable_route_failures": 6,
+  "risk_method": "research heuristic; not an official LI.FI security rating"
+}

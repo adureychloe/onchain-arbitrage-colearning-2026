@@ -30,7 +30,7 @@
 - [ ] [day-05](days/day-05.md)
 - [ ] [day-06](days/day-06.md)
 - [ ] [day-07](days/day-07.md)
-- [ ] [day-08](days/day-08.md)
+- [x] [day-08](days/day-08.md)
 - [ ] [day-09](days/day-09.md)
 - [ ] [day-10](days/day-10.md)
 - [ ] [day-11](days/day-11.md)

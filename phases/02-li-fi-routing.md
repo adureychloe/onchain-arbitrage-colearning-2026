@@ -21,12 +21,18 @@
 
 ## 阶段证据
 
-- 待补充
+- [EXP-2026-08-12-01：LI.FI Route 比较和 Arbitrum 同链 Swap](../experiments/EXP-2026-08-12-01.md)
+- [可复现 Route 比较脚本](../experiments/lifi_route_compare.py)
 
 ## 当前结论
 
-- 待补充
+- LI.FI Advanced Routes API 可同时发现 Bridge、同链 Swap 和多步 Route；同链实验实际返回 7 个 DEX/聚合工具候选。
+- Route 选择应优先比较保守的 `toAmountMin`，再结合 Gas、显式 Fee、模拟状态、动作数和故障恢复复杂度；不能只看乐观的 `toAmount`。
+- Fee 往往已包含在输入/输出数量流中，必须先判断 `included` 和步骤结构，避免重复扣减。
+- `executionDuration` 在部分同链报价中可能返回 0，不能直接当作真实执行时间。
 
 ## 未决问题与下一步
 
-- 待补充
+- 对固定输入做定时重复采样，区分市场状态变化与报价时效造成的 Route 漂移。
+- 为工具风险补充可验证的协议历史、审计、暂停权限和真实失败率数据。
+- 比较同链单 Swap 与跨链多步 Route 的失败恢复和资金占用成本。
