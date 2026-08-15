@@ -21,11 +21,11 @@
 
 ## 阶段证据
 
-- 待补充
+- [Day-11 重复查询脚本](../experiments/lifi_price_spread_watch.py)：跨链价差字段的输入/阈值/输出格式设计与实测。
 
 ## 当前结论
 
-- 待补充
+- 一次性观察可固化为「固定输入 + 阈值 + 机器可读输出」的重复查询脚本；跨链价差字段的初步设计已落地并实测（ETH Base vs Arbitrum spread `0.012%`，USDC vs USDC.e 触发 `symbol mismatch` 告警）。
 
 ## 未决问题与下一步
 
