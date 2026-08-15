@@ -12,6 +12,7 @@
 
 | 主题 | 入口 | 当前状态 |
 | --- | --- | --- |
+| LI.FI 套利场景 | [lifi-arbitrage-scenarios.md](./lifi-arbitrage-scenarios.md) | 研究（只读报价） |
 | AMM、订单簿与流动性深度 | 待补充 | 未开始 |
 | Gas、滑点、桥费与延迟 | 待补充 | 未开始 |
 | 链、资产、池子和数据源 | 待补充 | 未开始 |
