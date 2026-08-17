@@ -35,7 +35,7 @@
 - [ ] [day-10](days/day-10.md)
 - [x] [day-11](days/day-11.md)
 - [ ] [day-12](days/day-12.md)
-- [ ] [day-13](days/day-13.md)
+- [x] [day-13](days/day-13.md)
 - [ ] [day-14](days/day-14.md)
 - [ ] [day-15](days/day-15.md)
 - [ ] [day-16](days/day-16.md)
