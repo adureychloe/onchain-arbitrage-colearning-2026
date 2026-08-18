@@ -21,11 +21,15 @@
 
 ## 阶段证据
 
-- [Day-11 重复查询脚本](../experiments/lifi_price_spread_watch.py)：跨链价差字段的输入/阈值/输出格式设计与实测。
+- [Day-09 任务拆解](../days/day-09.md)：开放式问题 → 4 个「输入/工具/输出/复核点」任务。
+- [Day-10 机会证据表](../days/day-10.md)：7 字段 + 状态标注的 schema。
+- [Day-11 重复查询脚本](../experiments/lifi_price_spread_watch.py)：价差字段的输入/阈值/输出设计与实测。
+- [Day-12 最小工作流](../days/day-12.md)：「筛查 → 验证 → 记录」跑通实录与人工复核点。
 
 ## 当前结论
 
-- 一次性观察可固化为「固定输入 + 阈值 + 机器可读输出」的重复查询脚本；跨链价差字段的初步设计已落地并实测（ETH Base vs Arbitrum spread `0.012%`，USDC vs USDC.e 触发 `symbol mismatch` 告警）。
+- 开放式研究问题可拆成「输入 → 工具 → 输出」的稳定任务（day-09）；机会记录需 7 字段 + 状态标注（day-10）；机会字段可固化为带阈值的重复查询（day-11）；三者串成「筛查 → 验证 → 记录」最小工作流并真实跑通（day-12）。
+- 两个不可自动化的人工复核点：`priceUSD` 估值 vs `/v1/quote` 可成交价的落差、`executionDuration=0` 的失真。
 
 ## 未决问题与下一步
 
